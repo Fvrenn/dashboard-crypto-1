@@ -1,0 +1,45 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{html,ts}",
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        'Folito': ['Folito', 'system-ui', 'ui-sans-serif', 'sans-serif'],
+        'MoskauGrotesk': ['MoskauGrotesk', 'ui-serif', 'Georgia', 'serif'],
+        'mono': ['ui-monospace', 'SFMono-Regular', 'monospace'],
+        'display': ['Oswald', 'sans-serif'],
+        'body': ['Open Sans', 'sans-serif'],
+      },
+    },
+    colors: {
+      'bg': '#17181D',
+      'nav-bg': '#1D1E23',
+      'snd-bg': '#1C1D22',
+      'white': '#ffffff',
+      'grey-info-header': '#747578',
+      'txt-titl-section': 'rgba(255, 255, 255, 0.83)',
+      'crypto-1': '#B3A1FF',
+      'crypto-2': '#FBBC1B',
+      'crypto-3': '#0EBF9B',
+      'crypto-3': '#2684FC',
+      'crypto-4': '#E2F063',
+      'grey-border-light': '#3F3F40',
+      'grey-border-dark': '#383839',
+      'grey-card-txt': '#424346',
+      'light-grey-summary-txt': '#cdcdce',
+      'dark-grey-summary-txt': '#68696c',
+      'green': '#6DB54A',
+      'red': '#AB292C',
+      'orange-graph': '#EFA036',
+      'blue-graph': '#52D4FF',
+      'graph-titl': '#b5b5b7',
+      'graph-bg': '#18191E',
+      'nav-pri-bg': '#292a2d',
+      'nav-snd-bg': '#1B1C20',
+      'light-purple': 'rgba(178, 161, 255, 0.60)',
+    },
+  },  
+  plugins: [],
+}

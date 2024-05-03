@@ -1,0 +1,22 @@
+.crop::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%; // Ajoutez cette ligne
+  transform: translateX(-50%); // Ajoutez cette ligne
+  width: 24px !important;
+  height: 3px !important;
+  background: linear-gradient(146deg, rgb(31, 32, 36) 2.372%, rgb(36, 37, 40) 71.401%);
+  z-index: 10000 !important;
+}
+.crop::before {
+  content: "";
+  position: absolute;
+  top: 64px;
+  left: 50%; // Ajoutez cette ligne
+  transform: translateX(-50%); // Ajoutez cette ligne
+  width: 24px !important;
+  height: 2px !important;
+  background: linear-gradient(24deg, rgb(31, 32, 36) 2.372%,rgb(36, 37, 41) 71.401%);
+  z-index: 10000 !important;
+}
