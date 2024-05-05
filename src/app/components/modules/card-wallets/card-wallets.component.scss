@@ -1,0 +1,80 @@
+.card{
+  transition: background 0.4s ease-in-out;
+  cursor: pointer;
+}
+.card:hover{
+  background: #B3A1FF ;
+  border-color: rgba(128, 116, 181, 0.57);
+  h4,h1,h2,h3,.crypto{
+    color: #1C1C21;
+  }
+}
+.container-test{
+  position: absolute;
+}
+
+.top-right .container-test{
+  right: -3px;
+  top: 100px;
+}
+
+.bottom-right .container-test{
+  right: -3px;
+  bottom: 80px;
+}
+.bottom-left .container-test{
+  left: -3px;
+  bottom: 80px;
+}
+
+.top-left .container-test{
+  left: -3px;
+  top: 100px;
+}
+
+.cache{
+  width: 20.5px;
+  height: 31px;
+  z-index: 1000;
+}
+
+.top-right .cache{
+  right: -22.5px;
+  top: 84px;
+}
+
+.bottom-right .cache{
+  right: -22.5px;
+  bottom: 65px;
+}
+
+.bottom-left .cache{
+  left: -22.5px;
+  bottom: 65px;
+}
+
+.top-left .cache{
+  left: -22.5px;
+  top: 84px;
+}
+
+.test-elipse{
+  width: 39px !important;
+  height: 34px !important;
+  z-index: 10 !important;
+  clip-path: ellipse(50% 42% at 50% 50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.test-elipse-int{
+  width: 35px !important;
+  height: 30px !important;
+  z-index: 100 !important;
+  clip-path: ellipse(50% 42% at 50% 50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

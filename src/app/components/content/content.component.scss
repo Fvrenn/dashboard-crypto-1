@@ -3,49 +3,103 @@
   position: absolute;
   width: 3px !important;
   height: 24px !important;
-  background: linear-gradient(
-    222deg,
-    rgb(36, 37, 40) 2.372%,
-    rgb(32, 33, 37) 71.401%
-  );
+  background: linear-gradient(222deg,
+      rgb(36, 37, 40) 2.372%,
+      rgb(32, 33, 37) 71.401%);
   // background-color: red;
   z-index: 10000 !important;
   top: 20px;
   right: -2px;
 }
+
 .crop::before {
   content: "";
   position: absolute;
   width: 2px !important;
   height: 24px !important;
-  background: linear-gradient(
-    122deg,
-    rgb(36, 37, 40) 2.372%,
-    rgb(32, 33, 36) 71.401%
-  );
+  background: linear-gradient(122deg,
+      rgb(36, 37, 40) 2.372%,
+      rgb(32, 33, 36) 71.401%);
   // background-color: red;
   z-index: 10000 !important;
   top: 20px;
   right: 1px;
 
 }
+
 .test {
-  backdrop-filter: blur(104px);
-  background: linear-gradient(
-    180deg,
-    rgba(23, 24, 29, 0.14) 8.164%,
-    rgba(23, 24, 29, 0.14) 92.991%
-  );
+  backdrop-filter: blur(30px);
+  background: linear-gradient(180deg,
+      rgba(23, 24, 29, 0.14) 8.164%,
+      rgba(23, 24, 29, 0.14) 92.991%);
 }
+
+.blur-div {
+  opacity: 0;
+}
+
 .div1 {
   flex: 1223;
 }
+
 .div2 {
   flex: 234;
 }
+
 .div3 {
   flex: 12323;
 }
+
 .div4 {
   flex: 434;
+}
+
+.tout {
+  position: relative;
+}
+
+.tout::after{
+  content: url('../../../assets/icone/other/arrow-section.svg');
+  display: inline-block;
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.arrow-2 {
+  position: relative;
+}
+
+.arrow-2::after{
+  content: url('../../../assets/icone/other/arrow-section-2.svg');
+  display: inline-block;
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.test-elipse{
+  z-index: 10 ;
+  clip-path: ellipse(50% 42% at 50% 50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.test-elipse-int{
+  z-index: 100 ;
+  clip-path: ellipse(50% 42% at 50% 50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cache{
+
+  z-index: 1000;
 }
